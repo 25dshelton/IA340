@@ -36,3 +36,7 @@ where p_email = 'p1@jmu.edu' ;
 
 delete from professor
 where p_email = 'p1@jmu.edu'
+--you have to modify the course table first or else it won't work
+
+--q2.7
+
