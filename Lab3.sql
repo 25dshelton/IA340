@@ -42,11 +42,10 @@ where p_email = 'p1@jmu.edu'
 select * from public.enroll
 
 --q2.8
-SELECT c.c_number, COUNT(s_email) AS enrolled_students
-FROM course c
-INNER JOIN enroll e ON c.c_number = e.c_number
-GROUP BY c.c_number
-ORDER BY enrolled_students DESC
-LIMIT 1;
+select c_number, count(*) as num_student
+from enroll
+group by c_number
+order by num_student desc
+limit 1;
 
 --q2.9
