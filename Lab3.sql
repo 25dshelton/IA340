@@ -56,3 +56,15 @@ inner join course
 on professor.p_email = course.p_email
 
 --q2.10
+select
+    p.p_name AS professor_name,
+    count(c.c_number) as num_courses_taught
+from
+    professor p
+join
+    course c on p.p_email = c.p_email
+group by
+    p.p_email, p.p_name
+order by
+    num_courses_taught DESC
+limit 1;
