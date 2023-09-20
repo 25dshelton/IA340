@@ -39,4 +39,7 @@ where p_email = 'p1@jmu.edu'
 --you have to modify the course table first or else it won't work
 
 --q2.7
+select * from public.enroll
+
+--q2.8
 
